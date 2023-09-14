@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  free-hls:
+    build: .
+    container_name: 'free-hls'
+    volumes:
+      - app:/var/app
+    logging:
+      options:
+        max-size: '1G'
+        max-file: '10'
+    ports:
+      - '33950:3395'
+    restart: always
+
+volumes:
+  app:
