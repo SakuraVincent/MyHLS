@@ -3,7 +3,7 @@
 ## Docker Compose
 
 ```bash
-git clone https://github.com/sxyazi/free-hls.git && cd free-hls
+git clone https://github.com/SakuraVincent/MyHLS.git && cd MyHLS
 docker-compose up -d
 ```
 
@@ -20,5 +20,5 @@ pip3 install Flask peewee gunicorn python-dotenv
 
 ```bash
 cd web
-gunicorn app:app -b 0.0.0.0:3395 --workers=5 --threads=2 -D
+gunicorn app:app -b 0.0.0.0:6635 --workers=5 --threads=2 -D
 ```
