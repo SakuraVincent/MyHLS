@@ -9,7 +9,7 @@
 使用 Docker 一键部署（[其它方式](/docs/server-deployment.md)）：
 
 ```bash
-docker run --name free-hls -d -p 33950:3395 -v free-hls-data:/var/app sxyazi/free-hls
+docker run --name free-hls -d -p 6635:6635 -v free-hls-data:/var/app sxyazi/free-hls
 ```
 
 执行上面指令后，访问 `http://服务器地址:33950` 若看到 Free-HLS 界面，表示部署成功
@@ -27,7 +27,7 @@ apt install -y ffmpeg python3 python3-pip
 pip3 install requests python-dotenv
 ```
 
-复制客户端配置文件 `.env.example` 为 `.env`，将 `APIURL` 改为您的服务器域名或 IP 地址，最后修改 `UPLOAD_DRIVE` 为您的 [上传驱动器](https://github.com/sxyazi/free-hls/wiki/%E4%B8%8A%E4%BC%A0%E9%A9%B1%E5%8A%A8%E5%99%A8)，其值为 `uploader` 目录中的文件名。
+复制客户端配置文件 `.env.example` 为 `.env`，将 `APIURL` 改为您的服务器域名或 IP 地址，最后修改 `UPLOAD_DRIVE` 为您的 [上传驱动器](https://github.com/SakuraVincent/MyHLS/wiki/%E4%B8%8A%E4%BC%A0%E9%A9%B1%E5%8A%A8%E5%99%A8)，其值为 `uploader` 目录中的文件名。
 
 ### 开始使用
 
