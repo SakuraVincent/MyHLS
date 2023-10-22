@@ -6,13 +6,7 @@
 
 ## 服务端
 
-使用 Docker 一键部署（[其它方式](/docs/server-deployment.md)）：
-
-```bash
-docker run --name free-hls -d -p 6635:6635 -v free-hls-data:/var/app sxyazi/free-hls
-```
-
-执行上面指令后，访问 `http://服务器地址:33950` 若看到 Free-HLS 界面，表示部署成功
+执行上面指令后，访问 `http://服务器地址:33950` 若看到 Free-MyHLS 界面，表示部署成功
 
 ## 客户端
 
